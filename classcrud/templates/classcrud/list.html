@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>crud 연습</title>
+</head>
+<body>
+    <!-- 글쓰기 링크(버튼)-->
+    <a href="{% url 'new' %}"> 글쓰기 </a>
+
+
+    <!-- photo in object 로 쓸수가 없다. 이거 또한 커스텀이 가능하다.-->
+    <!-- 블로그 글을 띄우는 부분-->
+    {% for blog in blog_list %} <!-- 모든 객체가 들어간다.-->
+        <h2>{{blog.title}}</h2>
+        <h5>{{blog.created_at}}</h5>
+        <p>{{blog.body}}</p>
+        <a href= "{% url 'change' blog.id %}">수정해보기</a> <br>
+        <a href= "{% url 'del' blog.id %}">삭제해보기</a> <br>
+        <a href= "{% url 'detail' blog.id %}">자세히보기</a> <br>
+        
+
+        
+
+        <hr>
+
+    {% endfor %}
+   
+</body>
+</html>

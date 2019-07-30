@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>crud 연습</title>
+</head>
+<body>
+    <form method="POST"> <!--html에서 사용자로붙 입력을 받겠다. -->
+        {% csrf_token %} <!-- 보안상 사용 -->
+        <table>
+            {{form.as_table}} <!-- 입력을 받을 공간-->
+        </table>
+        <br>
+        <input type="submit" value="제출하기">
+    </form>
+    
+</body>
+</html>
