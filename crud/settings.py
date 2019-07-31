@@ -25,7 +25,7 @@ SECRET_KEY = '8_n_2_fm-qs5-(=113n-f%c@b6sv0_0(@$=m=44vc@7xos8oeu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-env.mjwfduiimc.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['django-env.8wutkcbi8w.us-west-2.elasticbeanstalk.com']
 
 # ALLOWED_HOSTS를 한번 더 점검 시킨다.
 # Application definition
