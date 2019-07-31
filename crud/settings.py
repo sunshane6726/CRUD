@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['django-env.fk9hprdy5b.us-west-2.elasticbeanstalk.com']
 
-
+# ALLOWED_HOSTS를 한번 더 점검 시킨다.
 # Application definition
 
 INSTALLED_APPS = [
